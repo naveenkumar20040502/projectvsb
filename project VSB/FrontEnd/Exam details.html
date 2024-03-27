@@ -1,0 +1,78 @@
+
+<html>
+    <head>
+        <title>Exam Details</title>
+        
+        <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #45a049;
+    }
+
+    .login-container {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(7, 7, 7, 0.1);
+      padding: 70px;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      border-radius: 20px;
+    }
+    button {
+      width: 50%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      border-radius: 20px;
+    }
+
+    
+    .login-container button:hover {
+      background-color: #45a049;
+    }
+    .login-container input[type="text"],
+    .login-container input[type="int"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+  </style>
+  </head>
+  <body>
+    
+    <div class="login-container">
+    <h2>Exam X</h2><br>
+    <input type="int" placeholder="Subject A"><br><br>
+    <input type="int" placeholder="Subject B"><br><br>
+    <input type="int" placeholder="Subject C"><br><br>
+    <input type="int" placeholder="Subject D"><br><br>
+    <input type="int" placeholder="Subject E"><br><br>
+    <input type="int" placeholder="Subject F"><br><br>
+
+    <button onclick="a()">SAVE</button>
+ 
+</div>
+<script>
+  function a(){
+    window.location.href="http://127.0.0.1:5500/FrontEnd/page8.html";
+  }
+</script>
+
+  </body>
+</html>
