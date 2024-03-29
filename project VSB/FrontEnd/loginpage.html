@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link  href="page2.html">
  
   <title>Login Page</title>
   <style>
@@ -62,14 +63,26 @@
 <body>
 
 <div class="login-container">
-  <h2>Login</h2>
-  <input type="text" id="username" placeholder="Username">
+  <h2 id="aq">Login</h2>
+  <input type="text" id="one" placeholder="Username">
   <input type="password" id="password" placeholder="password">
   <button>Login</button><br><br>
-  <button onclick="a()">Signup</button>
+  <button  id="button" onclick="a()" >Signup</button>
 </div>
+<script>
 
+function a()
+{
+  let Username;
+  document.getElementById("button").onclick = function()
+  {
+    username = document.getElementById("one").value;
+    document.getElementById("p2h1").textContent = `Hello ${username}`
+  }
+  window.location.href= "http://127.0.0.1:5500/FrontEnd/page2.html";
+}
 
+</script>
 
 
 </body>
